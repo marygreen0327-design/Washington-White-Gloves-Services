@@ -1,0 +1,364 @@
+/* ===========================
+   Global Styles
+=========================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  text-align: center;
+  color: #333;
+
+  /* Full-page gallery-style background */
+  background-image: url("Images/IMG_0366.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* ===========================
+   Header
+=========================== */
+header {
+  background: rgba(255, 105, 180, 0.8); /* pink with opacity */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 6px solid #32cd32; /* green accent */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* ===========================
+   Navigation Bar
+=========================== */
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 105, 180, 0.8);
+  border-bottom: 4px solid #32cd32;
+}
+
+.nav-bar li {
+  margin: 0 1.5rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 0;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover,
+.nav-bar a.active {
+  color: #32cd32;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff; /* solid white box */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+  color: #32cd32;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #32cd32;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #ff69b4;
+}
+
+/* ===========================
+   Sections / White Boxes
+=========================== */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #fff; /* solid white box */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #32cd32;
+}
+
+section h3 {
+  color: #ff69b4;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #32cd32;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* ===========================
+   Services Section
+=========================== */
+#services ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#services li {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 5px solid #32cd32;
+}
+
+.pricing-note {
+  font-weight: bold;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.special-note {
+  color: #ff69b4;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* ===========================
+   Gallery Section
+=========================== */
+#gallery .gallery-container,
+#home-gallery .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#gallery img,
+#home-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+#gallery img:hover,
+#home-gallery img:hover {
+  transform: scale(1.05);
+  border: 3px solid #ff69b4;
+}
+
+/* ===========================
+   Booking Form
+=========================== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background: #fff; /* solid white box */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background: #32cd32;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #ff69b4;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  background: rgba(51, 51, 51, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ===========================
+   Testimonials Section
+=========================== */
+.testimonials {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fff; /* solid white box */
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.testimonials h3 {
+  color: #32cd32;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial {
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 5px solid #ff69b4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #32cd32;
+}
+
+/* ===========================
+   About Page Layout (like Home)
+=========================== */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-left p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.about-right ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-right li {
+  background: #f8f8f8;
+  border-left: 5px solid #32cd32;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.about-right li:hover {
+  background: rgba(255, 105, 180, 0.1);
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+  background: #fff; /* solid white box */
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-info a {
+  color: #32cd32;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #ff69b4;
+}
+
+/* Responsive About Section */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+}
+
+/* ===========================
+   Heart (About Page)
+=========================== */
+.heart {
+  text-align: center;
+  font-size: 12.5rem;
+  color: #ec9fb0; /* your pink brand color */
+  margin-top: 15px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
