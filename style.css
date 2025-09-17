@@ -9,16 +9,13 @@ body {
   text-align: center;
   color: #333;
 
-  /* Full-page background without black gaps */
+  /* Full-page gallery-style background */
   background-image: url("Images/unnamed.jpg");
-  background-size: 100% 100%; /* stretch to fill */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-
- 
 
 /* ===========================
    Header
@@ -346,10 +343,6 @@ footer {
 @media (max-width: 768px) {
   .about-container {
     flex-direction: column;
-  }
-
-  body {
-    background-attachment: scroll; /* fixes mobile background bug */
   }
 }
 
