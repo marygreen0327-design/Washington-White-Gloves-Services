@@ -9,14 +9,16 @@ body {
   text-align: center;
   color: #333;
 
-  /* Responsive full background */
+  /* Full-page background without black gaps */
   background-image: url("Images/unnamed.jpg");
-  background-size: contain;   /* show the full image */
+  background-size: 100% 100%; /* stretch to fill */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #000;     /* fill space around image */
 }
+
+
+ 
 
 /* ===========================
    Header
